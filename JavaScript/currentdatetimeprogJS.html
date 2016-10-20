@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+
+<body>
+
+<h1>-JavaScript Display Time Drill-</h1>
+
+<p id="day"></p>
+<p id="time"</p>
+
+<script>
+
+function timedate(){  //create display day of the week/time function
+var sp = " ";
+var ampm = "pm";
+var today = new Date();
+var day = today.getDay();
+var hour = today.getHours();
+var min = today.getMinutes();
+var sec = today.getSeconds();
+var weekday = ["Sunday", "Monday", "Tuesday", "HumpDay", "Thursday", "Friday", "Saturday"];
+if ((hour-12)<0){ampm= "am"};  //determine am or pm and change accordingly//
+if (hour>=13){hour = (hour -12)}; //convert 24 hour military JS time to standard//
+document.getElementById("day").innerHTML = ("Today is: " + weekday[day]+".");  //display day of week
+document.getElementById("time").innerHTML = ("Current time is : "+ hour + sp + ampm + sp + ":" + sp + min + sp + ":" + sp + sec );
+};
+var timer = setInterval(function() {timedate()}, 3000);//rerun day of the week/time function every 3 sec
+   
+
+</script>
+</body>
+</html>

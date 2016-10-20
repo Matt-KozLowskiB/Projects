@@ -1,0 +1,73 @@
+@charset="UTF-8"
+           
+
+
+body, main, section, article, head, footer, nav, form {display: inline}
+
+h1, h2, h3, h4, p, a, body, html, main, section, nav, header, li, div, ul {Padding: 0px;  Margin: 0px}
+
+
+.banner {
+	Width: 1000px;
+	padding: 10px;
+	margin: 10px;
+	Background-color: Red
+	}
+	
+.Lowersection {
+padding: 10px;
+	width: 1000px;
+	margin: 0px;
+	background-color: white}
+
+#sourceCited {
+	color: blue;
+	font-style: italic
+}	
+
+form {
+	
+	
+	width: 645px;
+background-color: black}
+	
+body {
+	width: 1200px;
+	Background-color:  blue;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-left: auto}
+nav {
+	margin-left: 100px;
+	
+	width: 800px;
+	padding: 4px;
+	background-color: yellow
+}
+
+li {
+	
+	padding: 5px;
+	color: purple;
+	display: inline-block
+	}
+	
+section {
+	width: 1000px;
+	padding: 10px;
+	margin: 0px;
+	Background-color: green}
+	
+article {
+	padding: 5px;
+	margin: 15px;
+		background-color: orange}
+
+	
+h1, h2, h3, h4 {
+	color: black;
+	font-variant: small-caps;
+	font-family: "georgia", "times new roman"}
+	p {color: red}
+

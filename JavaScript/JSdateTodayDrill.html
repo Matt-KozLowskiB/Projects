@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <p id="Date"></p>
+
+    <script>
+        var sp = ":";
+        var today = new Date();
+        var year = today.getFullYear();
+        var month = today.getMonth();
+        var day = today.getDate();
+        month = month + 1;  //account for January = 0
+        if (month < 10) { month = ("0" + month) }; //if 1 digit month convert to 2 digits
+       
+        document.getElementById("Date").innerHTML = (month + sp + day + sp + year);
+
+
+    </script>
+
+</body>
+</html>
