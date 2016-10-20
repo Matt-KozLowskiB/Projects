@@ -1,3 +1,10 @@
+##Program Name:      MySorter.py
+##Program Language:  Python
+##Language Version:  2.7.9
+##Platform Tested:   Windows 8.1, x86(32bit)
+##Author:            Matt Kozlowski
+##Date Created:      10/01/16
+
 
 def outputDisplay():                                              # Define print sorted list function
    print("Beauty Out:")
