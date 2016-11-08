@@ -21,12 +21,17 @@ from tkinter import *
 dt = time.time()
 
 
+
 class Window_Main(tk.Frame):
-    def __init__(self, parent,  *args, **kwargs):
-        tk.Frame.__init__(self, parent, *args, **kwargs)
+    
+    def __init__(self, parent,  *args, **kwargs):        
+        tk.Frame.__init__(self, parent, *args, **kwargs)       
         self.master.title("File Move and Copy Program")
-      
         self.master = parent
+        
+        ## Hide Root Window Until GUI constructed:
+        self.master.iconify()
+               
         ## Set Parent window size limitations:
         self.master.maxsize(450,600)
         
@@ -36,11 +41,7 @@ class Window_Main(tk.Frame):
 
         ## Make sure application window has keyboard focus:
         root.focus_force()
-        
-        
-        
-        
-    
+         
 
 
 if __name__ == "__main__":

@@ -21,18 +21,19 @@ from tkinter import *
 
 
 
-
-
 def Load_GUI(self, root):
 
-        
+        ## Declare StringVars for function portability:
         CopySelection=StringVar()
         Blarmee=StringVar()
         rootpath=StringVar()
         path=rootpath.get()       
         x=StringVar()
-       
 
+        
+        ## Call Function asking User to select Root Navigation Directory:
+        FileMoveNCopy_funk.root_dir_select_box(self, rootpath)
+        
         ## Create and Configure parent frames for widgets:
         pane = ttk.Panedwindow(root, orient = VERTICAL)      
         pane.pack(fill=BOTH, expand=True)
@@ -86,18 +87,18 @@ def Load_GUI(self, root):
         
         ## Create Entry Widgets and Labels and Position using Grid Manager:
         self.src_lbl = tk.Label(self.userPane, text ='Source Folder:')
-        self.src_lbl.grid(row = 0, column=0, padx=(10, 0), sticky='W')
-        self.dest_lbl = tk.Label(self.userPane, text ='Destination Folder')
-        self.dest_lbl.grid(row= 1, column=0, padx=(10,0), sticky='W')
+        self.src_lbl.grid(row = 1, column=0, padx=(10, 0),pady=(5, 0), sticky='W')
+        self.dest_lbl = tk.Label(self.userPane, text ='Destination Folder:')
+        self.dest_lbl.grid(row= 2, column=0, padx=(10,0), sticky='W')
         self.nav_lbl = tk.Label(self.userPane, text ='Navigation Root Directory:')
-        self.nav_lbl.grid(row=2, column=0, padx=(10,0),pady=(0,10), sticky='W')
+        self.nav_lbl.grid(row=0, column=0, padx=(10,0),pady=(5, 0), sticky='W')
         self.src_text = tk.Entry(self.userPane, text='', width=33)
-        self.src_text.grid(row=0, column=2,padx=(10,0), rowspan=1,columnspan=3)
+        self.src_text.grid(row=1, column=2,padx=(10,0), rowspan=1,columnspan=3)
         self.dest_text = tk.Entry(self.userPane, text='',width=33)
-        self.dest_text.grid(row=1, column=2,padx=(10,0), rowspan=1,columnspan=3)
+        self.dest_text.grid(row=2, column=2,padx=(10,0), rowspan=1,columnspan=3)
         self.nav_text = tk.Entry(self.userPane, text='',width=33)        
-        self.nav_text.grid(row=2, column=2,padx=(10,0), columnspan=3 )
-
+        self.nav_text.grid(row=0, column=2,padx=(10,0), columnspan=3 )
+        
         ## Create RadioButton Widgets and Labels; Place using Grid Manager
         self.copy_Check = ttk.Radiobutton(self.userPane, text='Review Last Mod Check?',\
         value= 'Check', variable=CopySelection)
@@ -119,32 +120,26 @@ def Load_GUI(self, root):
         ## Create Button Widgets and Labels and Associated Function Calls:
         self.btn_srcselect=tk.Button(self.userPane, text='Select',\
         command=lambda: FileMoveNCopy_funk.src_select_funk(self, Blarmee, x))
-        self.btn_srcselect.grid(row = 0, column = 1, padx=(10,0), pady=(2,0), sticky='W')
+        self.btn_srcselect.grid(row = 1, column = 1, padx=(10,0), pady=(2,0), sticky='W')
         self.btn_destselect=tk.Button(self.userPane, text='Select', \
         command=lambda: FileMoveNCopy_funk.dest_select_funk(self, Blarmee,x))
-        self.btn_destselect.grid(row = 1, column = 1, padx=(10,0),pady=(2,0), sticky='w')
+        self.btn_destselect.grid(row = 2, column = 1, padx=(10,0),pady=(2,0), sticky='w')
         self.btn_execute=tk.Button(self.userPane, text='Execute?',\
         command=lambda: FileMoveNCopy_funk.Execute_copy_funk(self, CopySelection))
         self.btn_execute.grid(row = 5, column = 3, padx=(0,5), pady=(0,10),sticky='W')
         self.btn_reset=tk.Button(self.userPane, text='Reset?',\
-        command=lambda: FileMoveNCopy_funk.Reset_funk(self, Blarmee, CopySelection))
+        command=lambda: FileMoveNCopy_funk.Reset_funk(self, Blarmee, CopySelection, rootpath))
         self.btn_reset.grid(row = 5, column = 4, padx=(0,), pady=(0,10),sticky='w')
 
         ## Now that User Pane is configured, pack it into parent window frame:
         pane.add(self.userPane, weight = 0)
-
-        ## Next call Function to Select Root Directory for Treeview Display:
-        FileMoveNCopy_funk.root_dir_select_box(self)
-        
-        
-        
-        
+      
         ## Configure the TreeView Widget for Root Directory Display:
         self.tree= ttk.Treeview(self.treePane)        
         sb_v = ttk.Scrollbar(self.treePane, orient = 'vertical', command = self.tree.yview)
         sb_h = ttk.Scrollbar(self.treePane, orient = 'horizontal', command = self.tree.xview)      
         self.tree.configure(yscroll=sb_v.set, xscroll=sb_h.set)
-        self.tree.heading(column='#0', text='Root Directory',anchor=CENTER  )
+        self.tree.heading(column='#0', text='-Navigation Root Directory-',anchor=CENTER  )
         self.tree.column('#0', stretch=tk.YES,width=450 )
         sb_v.grid(row=0, column=23, sticky='NS')
         sb_h.grid(row=1, column=0, columnspan=3, sticky='EW')
@@ -152,7 +147,7 @@ def Load_GUI(self, root):
         pane.add(self.treePane, weight = 0)
         self.dispPane.pack(fill=BOTH, expand=True)
         pane.add(self.dispPane)
-           
+        self.nav_text.insert(0, rootpath.get())   
         ## Then Finally, call function to populate TreeView Widget:
         FileMoveNCopy_funk.start_tree(self)        
         
@@ -161,7 +156,9 @@ def Load_GUI(self, root):
         ## Bind TreeView User Selection to Event
         self.tree.bind('<<TreeviewSelect>>', lambda event: \
         FileMoveNCopy_funk.treeselect(self, event, x, Blarmee))
-                
+
+        ## Now that GUI is completed, display GUI on User's Screen:
+        self.master.deiconify()       
         
         
         
