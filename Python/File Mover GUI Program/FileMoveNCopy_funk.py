@@ -25,8 +25,9 @@ def root_dir_select_box(self):
     
     ## Prompt User to Select a Root Directory Using Directory Widget:
     rootpath=StringVar()
-    directory=(filedialog.askdirectory())
+    directory=(filedialog.askdirectory(title= 'Please Select The Directory Containing Your Target Folders'))
     rootpath.set(os.path.abspath(directory))
+    
     
     ## Populate Nav Root Directory with User's Selection from Dir Widget:
     self.nav_text.insert(0, rootpath.get())
