@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<!-- ## Program Title:      FileCopyNMove_Main.py (with associated linked GUI and Function Modules)
+	 ## Purpose:            To Practice inserting Javascript Into an HTML document, and to concoct
+	 ##						a function that will employ JS to provide the current date and time
+	 ##                     Using date and time capture functions, then formatting the output.
+	 ## Program Language:   Javascript
+	 ## Platform Tested:    Windows 8.1 on x86 OS
+	 ## Author:             Matt Kozlowski
+	 ## Date Created:       October 4, 2016 -->
 <html>
 <head>
 
@@ -12,8 +20,8 @@
 <p id="time"</p>
 
 <script>
-
-function timedate(){  //create display day of the week/time function
+//create display day of the week/time function
+function timedate(){  
 var sp = " ";
 var ampm = "pm";
 var today = new Date();
@@ -22,12 +30,16 @@ var hour = today.getHours();
 var min = today.getMinutes();
 var sec = today.getSeconds();
 var weekday = ["Sunday", "Monday", "Tuesday", "HumpDay", "Thursday", "Friday", "Saturday"];
-if ((hour-12)<0){ampm= "am"};  //determine am or pm and change accordingly//
-if (hour>=13){hour = (hour -12)}; //convert 24 hour military JS time to standard//
-document.getElementById("day").innerHTML = ("Today is: " + weekday[day]+".");  //display day of week
+ //determine am or pm and change accordingly//
+if ((hour-12)<0){ampm= "am"}; 
+//convert 24 hour military JS time to standard//
+if (hour>=13){hour = (hour -12)};
+//display day of week 
+document.getElementById("day").innerHTML = ("Today is: " + weekday[day]+".");  
 document.getElementById("time").innerHTML = ("Current time is : "+ hour + sp + ampm + sp + ":" + sp + min + sp + ":" + sp + sec );
 };
-var timer = setInterval(function() {timedate()}, 3000);//rerun day of the week/time function every 3 sec
+//rerun day of the week/time function every 3 sec
+var timer = setInterval(function() {timedate()}, 3000);
    
 
 </script>
