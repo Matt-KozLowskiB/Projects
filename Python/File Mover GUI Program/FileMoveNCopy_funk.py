@@ -21,16 +21,13 @@ dt = time.time()
 
 
 
-def root_dir_select_box(self):
+def root_dir_select_box(self, rootpath):
     
-    ## Prompt User to Select a Root Directory Using Directory Widget:
-    rootpath=StringVar()
+    ## Prompt User to Select a Root Directory Using Directory Widget:    
     directory=(filedialog.askdirectory(title= 'Please Select The Directory Containing Your Target Folders'))
     rootpath.set(os.path.abspath(directory))
-    
-    
-    ## Populate Nav Root Directory with User's Selection from Dir Widget:
-    self.nav_text.insert(0, rootpath.get())
+       
+    ## Populate Nav Root Directory with User's Selection from Dir Widget:   
     return rootpath.get
         
 def src_select_funk(self, Blarmee, x655556):
@@ -68,11 +65,8 @@ def src_select_funk(self, Blarmee, x655556):
     ## When All Files Processed, Disable Source Select Button & Entry Box:              
     self.src_text.config(state='disabled')
     self.btn_srcselect.config(state='disabled')
-                    
-                    
-                    
-                    
-            
+                                                          
+                                
 def dest_select_funk(self, Blarmee, x):
     
     ## Empty Existing Contents of Destination Listbox, if necessary:
@@ -98,7 +92,7 @@ def dest_select_funk(self, Blarmee, x):
             self.destLB.insert(i, p)
             i +=1
             
-def Reset_funk(self, Blarmee, CopySelection):
+def Reset_funk(self, Blarmee, CopySelection, rootpath):
     ## Reset Text Entry Widgets to Default:       
     self.src_text.config(state='normal')
     self.src_text.delete(0, END)
@@ -119,15 +113,15 @@ def Reset_funk(self, Blarmee, CopySelection):
     ## Reset Treeselection Event Variable:
     Blarmee.set('')
     CopySelection.set('')
-    
+    rootpath.set('')
     ## Delete Current Root Dir Treeview & Reset:
     self.tree.parent('')
     for i in self.tree.get_children(''):
         self.tree.delete(i)
         
-    ## Re-Initiate Program by Asking User for New Root Directory Selection:
-    root_dir_select_box(self)
-    
+    ## Re-Initiate Program by Asking User for New Root Directory Selection:    
+    root_dir_select_box(self, rootpath)
+    self.nav_text.insert(0, rootpath.get())
     ## Re-Populate Treeview with User Selected Root Directory:
     start_tree(self)
             
@@ -175,12 +169,7 @@ def Copy_Mod_funk(self, Modtime):
                 if self.srcLB.get(i)==file:                        
                     self.destLB.insert(END, file)                     
                     shutil.copy2(os.path.join(source, file), os.path.join(destination, file))
-                    
-    
-                    
-                    
-                #
-            
+                               
             
 def Execute_copy_funk(self, CopySelection):
     ## Collect User Selected Parameters & assign to variables
@@ -221,7 +210,6 @@ def Execute_copy_funk(self, CopySelection):
             else:
                 Copy_Mod_funk(self, Modtime)
    
-
 
 def center_window(self, w, h): # Courtesy of Daniel A. Christie (Phonebook Drill Program):
     ## get user's screen width and height

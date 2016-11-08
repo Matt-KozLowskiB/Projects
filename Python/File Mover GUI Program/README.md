@@ -7,5 +7,7 @@ relocation and tracking file modification properties.
 It incorporates a simple database to log each instance
 a file's modification properties are reviewed for
 tracking purposes, useful in development scenarios.
+It demonstrates use of multiple python modules
+to achieve this purpose.
 
 [portfolio](../../../)
