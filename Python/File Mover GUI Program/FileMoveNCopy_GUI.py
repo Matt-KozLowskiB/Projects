@@ -29,11 +29,9 @@ def Load_GUI(self, root):
         CopySelection=StringVar()
         Blarmee=StringVar()
         rootpath=StringVar()
-        path=rootpath.get()
-        IndexSelected=StringVar()
-        z=StringVar()
+        path=rootpath.get()       
         x=StringVar()
-        y=StringVar()
+       
 
         ## Create and Configure parent frames for widgets:
         pane = ttk.Panedwindow(root, orient = VERTICAL)      
@@ -101,11 +99,14 @@ def Load_GUI(self, root):
         self.nav_text.grid(row=2, column=2,padx=(10,0), columnspan=3 )
 
         ## Create RadioButton Widgets and Labels; Place using Grid Manager
-        self.copy_Check = ttk.Radiobutton(self.userPane, text='Review Last Mod Check?', value= 'Check', variable=CopySelection)
+        self.copy_Check = ttk.Radiobutton(self.userPane, text='Review Last Mod Check?',\
+        value= 'Check', variable=CopySelection)
         self.copy_Check.grid(row=3, column=0, padx=(10,0),pady=(0,2), sticky='W')      
-        self.copy_All = ttk.Radiobutton(self.userPane, text='Copy All?', value= 'All', variable=CopySelection)
+        self.copy_All = ttk.Radiobutton(self.userPane, text='Copy All?',\
+        value= 'All', variable=CopySelection)
         self.copy_All.grid(row=4, column=0, padx=(10,0), sticky='W')
-        self.copy_Mod = ttk.Radiobutton(self.userPane, text='Copy Modified Within Last', variable=CopySelection,value= 'Mod')
+        self.copy_Mod = ttk.Radiobutton(self.userPane, text='Copy Modified Within Last', \
+        variable=CopySelection,value= 'Mod')
         self.copy_Mod.grid(row=5, column=0, padx=(10,0),pady=(0,10), sticky='W')
         self.copymod_lbl = tk.Label(self.userPane, text ='Hours?')
         self.copymod_lbl.grid(row = 5, column=2, padx=(2, 0),pady=(0,10), sticky='W')
@@ -116,13 +117,17 @@ def Load_GUI(self, root):
         self.copymod_text.bind('<ButtonPress>', lambda event: FileMoveNCopy_funk.BoxSelect)
 
         ## Create Button Widgets and Labels and Associated Function Calls:
-        self.btn_srcselect=tk.Button(self.userPane, text='Select',command=lambda: FileMoveNCopy_funk.src_select_funk(self, Blarmee, x))
+        self.btn_srcselect=tk.Button(self.userPane, text='Select',\
+        command=lambda: FileMoveNCopy_funk.src_select_funk(self, Blarmee, x))
         self.btn_srcselect.grid(row = 0, column = 1, padx=(10,0), pady=(2,0), sticky='W')
-        self.btn_destselect=tk.Button(self.userPane, text='Select'  ,command=lambda: FileMoveNCopy_funk.dest_select_funk(self, Blarmee,x))
+        self.btn_destselect=tk.Button(self.userPane, text='Select', \
+        command=lambda: FileMoveNCopy_funk.dest_select_funk(self, Blarmee,x))
         self.btn_destselect.grid(row = 1, column = 1, padx=(10,0),pady=(2,0), sticky='w')
-        self.btn_execute=tk.Button(self.userPane, text='Execute?',command=lambda: FileMoveNCopy_funk.Execute_copy_funk(self, CopySelection))
+        self.btn_execute=tk.Button(self.userPane, text='Execute?',\
+        command=lambda: FileMoveNCopy_funk.Execute_copy_funk(self, CopySelection))
         self.btn_execute.grid(row = 5, column = 3, padx=(0,5), pady=(0,10),sticky='W')
-        self.btn_reset=tk.Button(self.userPane, text='Reset?',command=lambda: FileMoveNCopy_funk.Reset_funk(self, Blarmee, CopySelection))
+        self.btn_reset=tk.Button(self.userPane, text='Reset?',\
+        command=lambda: FileMoveNCopy_funk.Reset_funk(self, Blarmee, CopySelection))
         self.btn_reset.grid(row = 5, column = 4, padx=(0,), pady=(0,10),sticky='w')
 
         ## Now that User Pane is configured, pack it into parent window frame:
@@ -151,23 +156,11 @@ def Load_GUI(self, root):
         ## Then Finally, call function to populate TreeView Widget:
         FileMoveNCopy_funk.start_tree(self)        
         
-        ## Define Function for Treeview Virtual Events:
-        def treeselect(event):
-        
-                selectpath=(os.path.abspath(self.nav_text.get()))
-                ## Store User Selected TreeView Folder:
-                x.set(self.tree.focus())
-                y=   (x.get())
-                ## Get Treeview assigned index for Selected Folder In Directory Root:
-                vary=(self.tree.item(y, option='text'))
-                foofoo=(os.path.join(selectpath, vary))
-                Blarmee.set(foofoo)
-                
-                ## Return Full pathname of User Selected Folder:
-                return self, Blarmee, x
+       
 
         ## Bind TreeView User Selection to Event
-        self.tree.bind('<<TreeviewSelect>>', treeselect)
+        self.tree.bind('<<TreeviewSelect>>', lambda event: \
+        FileMoveNCopy_funk.treeselect(self, event, x, Blarmee))
                 
         
         

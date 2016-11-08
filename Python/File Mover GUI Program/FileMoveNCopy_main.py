@@ -32,7 +32,7 @@ class Window_Main(tk.Frame):
         
         ## Call center parent window function (courtesy Daniel A. Christie)
         FileMoveNCopy_funk.center_window(self, 450, 600)       
-        FileMoveNCopy_GUI.Load_GUI(self, root)
+        FileMoveNCopy_GUI.Load_GUI(self, root, *args)
 
         ## Make sure application window has keyboard focus:
         root.focus_force()

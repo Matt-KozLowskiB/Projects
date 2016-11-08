@@ -290,9 +290,26 @@ def Check_last_mod_funk(self, source):
             self.destLB.insert(END, row)
           
         ## Once Last Logtime displayed for each file, add new data with current Logtime in DB:
-        c.execute("INSERT INTO checkstats(Filename, Modtime, ModDelta, Logtime) VALUES(?,?, ?, ?)",(contents, filestats[8], ModDelta, date))
+        c.execute("INSERT INTO checkstats(Filename, Modtime, ModDelta, Logtime) VALUES(?,?, ?, ?)",\
+        (contents, filestats[8], ModDelta, date))
         conn.commit()    
         conn.close()
+
+ ## Define Function for Treeview Virtual Events:
+def treeselect(self, event, x, Blarmee):
+        
+    selectpath=(os.path.abspath(self.nav_text.get()))
+    ## Store User Selected TreeView Folder:
+    x.set(self.tree.focus())
+    y=   (x.get())
+    ## Get Treeview assigned index for Selected Folder In Directory Root:
+    vary=(self.tree.item(y, option='text'))
+    foofoo=(os.path.join(selectpath, vary))
+    Blarmee.set(foofoo)
+    
+    ## Return Full pathname of User Selected Folder:
+    return self, Blarmee, x
+                   
 
 def BoxSelect(event):
     ## Ensure Keyboard focus set to Hours since modified entry widget on mouseclick:
