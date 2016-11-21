@@ -1,0 +1,6 @@
+C:\Users\Matt\Documents\GitHub\ProjectsI\C#\C sharp  basics tutorial 2  exceptions etc\C sharp  basics tutorial 2  exceptions etc\bin\Debug\C sharp  basics tutorial 2  exceptions etc.exe.config
+C:\Users\Matt\Documents\GitHub\ProjectsI\C#\C sharp  basics tutorial 2  exceptions etc\C sharp  basics tutorial 2  exceptions etc\obj\Debug\C sharp  basics tutorial 2  exceptions etc.csprojResolveAssemblyReference.cache
+C:\Users\Matt\Documents\GitHub\ProjectsI\C#\C sharp  basics tutorial 2  exceptions etc\C sharp  basics tutorial 2  exceptions etc\bin\Debug\C sharp  basics tutorial 2  exceptions etc.exe
+C:\Users\Matt\Documents\GitHub\ProjectsI\C#\C sharp  basics tutorial 2  exceptions etc\C sharp  basics tutorial 2  exceptions etc\bin\Debug\C sharp  basics tutorial 2  exceptions etc.pdb
+C:\Users\Matt\Documents\GitHub\ProjectsI\C#\C sharp  basics tutorial 2  exceptions etc\C sharp  basics tutorial 2  exceptions etc\obj\Debug\C sharp  basics tutorial 2  exceptions etc.exe
+C:\Users\Matt\Documents\GitHub\ProjectsI\C#\C sharp  basics tutorial 2  exceptions etc\C sharp  basics tutorial 2  exceptions etc\obj\Debug\C sharp  basics tutorial 2  exceptions etc.pdb
