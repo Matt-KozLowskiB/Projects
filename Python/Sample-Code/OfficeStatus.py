@@ -1,11 +1,11 @@
-##Program Name: OfficeStatus.py
-##Purpose:  Use python datetime module to determine whether a business branch
-##          in different timezones open or closed based on current time.
+##Program Name:     OfficeStatus.py
+##Purpose:          Use python datetime module to determine whether a business branch
+##                  in different timezones open or closed based on current time.
 ##Program Language: Python
 ##Language Version: 2.7.9
 ##Platform Tested:  Windows 8.1 on x86
-##Author:  Matt Kozlowski
-##Date Created: October 13, 2016
+##Author:           Matt Kozlowski
+##Date Created:     October 13, 2016
 
 
 import datetime
