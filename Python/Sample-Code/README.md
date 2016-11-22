@@ -18,4 +18,9 @@ whether the various office locations would be open or
 closed based upon the current time and outputs the
 results to the screen.
 
+
+[Screenshot of MySorter Program](https://i.imgur.com/OJKV5qY.png)
+
+[Screenshot of OfficeStatus Program](https://i.imgur.com/OcHrqY3.png)
+
 [Return to Portfolio Main](../../READMEport1.md)

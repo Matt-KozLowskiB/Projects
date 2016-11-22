@@ -12,7 +12,7 @@ user friendliness, and then output
 the results to the screen for viewing.
 Another Javascript program demonstrates
 a pushbutton with a print window function
-attached to it:
+attached to it.
 
 [Image of 'CurrentdatetimeprogJS' Output](https://i.imgur.com/1i7GDy0.png)
 
