@@ -22,4 +22,6 @@ answer the various 'test questions' the
 students were posed once their database
 was populated.
 
+[Image of Database Table Models](https://i.imgur.com/AoblkML.png)
+
 [Return to Portfolio Main](../../READMEport1.md)
