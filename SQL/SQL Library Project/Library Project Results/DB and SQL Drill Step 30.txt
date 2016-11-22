@@ -1,0 +1,104 @@
+--DB / SQL course Library Drill Answers:
+
+
+--Question 1  Code:
+
+SELECT NumberCopies,BookTitle,BranchName
+FROM bookcopies AS bc
+INNER JOIN book
+ON bc.bookID=book.bookID
+INNER JOIN branch
+ON bc.branchID=branch.branchID
+WHERE BookTitle='The Lost Tribe'
+AND branchname='Sharpstown'
+
+
+--Question 2  Code:
+
+SELECT NumberCopies,BookTitle,BranchName
+FROM bookcopies AS bc
+INNER JOIN book
+ON bc.bookID=book.bookID
+INNER JOIN branch
+ON bc.branchID=branch.branchID
+WHERE BookTitle='The Lost Tribe'
+AND branchname LIKE '%'
+
+--Question 3  Code:
+
+SELECT BorrowerName,BorrowerAddress,BorrowerPhone
+FROM bookloans as bl
+RIGHT JOIN borrower as br
+ON br.cardID=bl.cardID
+WHERE Bl.cardID IS NULL
+
+
+
+--Question 4 Code:
+
+SELECT BookTitle, BranchName, BorrowerName,BorrowerAddress
+FROM BOOKLOANS as bl
+INNER JOIN Borrower as br
+on bl.cardID = br.cardID
+INNER JOIN Book
+ON book.bookid=bl.bookID
+INNER JOIN Branch
+ON branch.branchID=bl.branchID
+WHERE DueDate='2016-09-01'
+AND BranchName='Sharpstown'
+
+--Question 5  Code:
+
+SELECT COUNT (*), Branchname
+FROM BOOKLOANS as bl
+INNER JOIN Borrower as br
+on bl.cardID = br.cardID
+INNER JOIN Book
+ON book.bookid=bl.bookID
+INNER JOIN Branch
+ON branch.branchID=bl.branchID
+GROUP BY Branchname
+
+
+--Question 6 Code:
+
+SELECT COUNT (*) AS booksloaned, BorrowerName
+FROM BOOKLOANS as bl
+INNER JOIN Borrower as br
+on bl.cardID = br.cardID
+INNER JOIN Book
+ON book.bookid=bl.bookID
+INNER JOIN Branch
+ON branch.branchID=bl.branchID
+GROUP BY BorrowerName
+HAVING COUNT (*)>=5
+ORDER BY booksloaned DESC, BorrowerName DESC
+
+
+--Question 7 Code:
+
+SELECT BookTitle,numbercopies
+FROM bookcopies as bc
+INNER JOIN Branch as br
+ON bc.branchID=br.branchID
+INNER JOIN Author
+ON Author.bookID=bc.bookID
+INNER JOIN book
+ON book.bookID=bc.bookID
+WHERE authorname='Stephen King'
+AND branchname='Central'
+
+
+
+--Last Drill (create procedure from Questions 1-7)
+
+CREATE PROC NumberOfbyTitleBranch @GetBookTitle VARCHAR(30),@GetBranchName VARCHAR(40)
+AS
+SELECT NumberCopies,BookTitle,BranchName
+FROM bookcopies AS bc
+INNER JOIN book
+ON bc.bookID=book.bookID
+INNER JOIN branch
+ON bc.branchID=branch.branchID
+WHERE BookTitle=@GetBookTitle
+AND branchname=@GetBranchName

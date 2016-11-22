@@ -1,0 +1,51 @@
+﻿Number,NameSet,StreetAddress,City,State,ZipCode,TelephoneNumber,TelephoneCountryCode
+1,American,"3136 Sampson Street",Brighton,CO,80601,303-637-2522,1
+2,American,"2861 Nixon Avenue",Chattanooga,TN,37408,423-255-0854,1
+3,American,"4447 Kildeer Drive","Boynton Beach",FL,33436,754-235-7071,1
+4,American,"1603 George Street",Ocala,FL,34471,352-533-0295,1
+5,American,"1488 Tree Frog Lane","Kansas City",MO,64106,816-576-1467,1
+6,American,"391 Aspen Court",Cambridge,MA,02141,617-370-2788,1
+7,American,"1846 Pine Street",Pittsburgh,PA,15219,724-268-9313,1
+8,American,"4611 Kuhl Avenue",Atlanta,GA,30303,678-660-4993,1
+9,American,"783 Musgrave Street","Oklahoma City",OK,73109,405-249-3295,1
+10,American,"4396 Lightning Point Drive",Memphis,TN,38110,901-528-7246,1
+11,American,"2888 Harrison Street","San Francisco",CA,94143,415-538-4401,1
+12,American,"11 Leroy Lane",Harold,KY,41635,606-213-4828,1
+13,American,"1726 Fleming Way",Warsaw,VA,22572,804-792-0499,1
+14,American,"2931 Big Elm","Kansas City",MO,64108,816-785-9137,1
+15,American,"3126 Angus Road","New York",NY,10010,212-405-2119,1
+16,American,"3309 Todds Lane","San Antonio",TX,78217,210-477-1954,1
+17,American,"913 Luke Lane","Oklahoma City",OK,73102,580-219-8677,1
+18,American,"1830 Adamsville Road",Laredo,TX,78040,956-712-3613,1
+19,American,"4368 Ward Road","Long Island City",NY,11101,914-931-8134,1
+20,American,"3162 Willow Greene Drive",Montgomery,AL,36117,334-312-7572,1
+21,American,"4805 Pallet Street",Monsey,NY,10952,914-392-7656,1
+22,American,"2692 Cessna Drive","Fort Wayne",IN,46865,260-417-1998,1
+23,American,"2739 Lewis Street","Hickory Hills",IL,60457,630-927-2358,1
+24,American,"1159 High Meadow Lane","White Haven",PA,18861,570-443-5557,1
+25,American,"3993 Canis Heights Drive","Santa Ana",CA,92705,213-607-8040,1
+26,American,"2320 Lightning Point Drive",Memphis,TN,38117,901-474-8190,1
+27,American,"4848 Blane Street","Saint Louis",MO,63108,314-521-4428,1
+28,American,"4864 Hillcrest Avenue",Boston,MA,02110,781-884-9238,1
+29,American,"2827 Lynn Avenue",Barron,WI,54812,715-553-1882,1
+30,American,"446 Godfrey Street",Beaverton,OR,97005,503-641-0618,1
+31,American,"497 Hidden Valley Road",Harrisburg,PA,17102,717-200-6233,1
+32,American,"1369 Ashton Lane",Lampasas,TX,76550,512-556-6244,1
+33,American,"3223 Woodlawn Drive","New Berlin",WI,53151,414-573-1683,1
+34,American,"1696 Despard Street",Atlanta,GA,30331,404-691-0284,1
+35,American,"4884 Trainer Avenue",Davenport,IL,52803,309-568-3920,1
+36,American,"3732 Bernardo Street",Tampa,FL,33602,813-261-1867,1
+37,American,"1890 Raver Croft Drive",Bristol,TN,37620,423-612-9713,1
+38,American,"2475 Laurel Lee",Burnsville,MN,55337,651-808-1506,1
+39,American,"931 Swick Hill Street","New Orleans",LA,70113,985-248-9528,1
+40,American,"3173 Elk Rd Little",Sacaton,AZ,85247,520-215-1284,1
+41,American,"907 Heritage Road",Raymond,CA,93653,559-689-0682,1
+42,American,"254 Davis Avenue",Fairfield,CA,94533,707-784-5637,1
+43,American,"3465 Skinner Hollow Road",Durkee,OR,97905,541-877-1367,1
+44,American,"1955 Waterview Lane","Las Cruces",NM,88005,505-524-7564,1
+45,American,"643 Brentwood Drive",Austin,TX,78744,512-785-7281,1
+46,American,"2926 Bassell Avenue","Little Rock",AR,72201,501-626-5011,1
+47,American,"657 Losh Lane",Pittsburgh,PA,15219,412-717-7187,1
+48,American,"1434 Henry Ford Avenue",Tulsa,OK,74133,918-252-9104,1
+49,American,"4799 Walt Nuzum Farm Road",Spencerport,NY,14559,585-349-2939,1
+50,American,"2028 Bryan Avenue",Minneapolis,MN,55406,651-269-9839,1
