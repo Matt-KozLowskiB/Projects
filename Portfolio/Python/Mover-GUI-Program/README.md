@@ -12,4 +12,4 @@ to achieve this purpose.
 
 Screenshot of this program: https://i.imgur.com/3KLQzsv.png
 
-[portfolio](../Portfolio/READMEport1.md)
+[portfolio](../../Portfolio/READMEport1.md)
