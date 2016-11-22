@@ -10,6 +10,6 @@ tracking purposes, useful in development scenarios.
 It demonstrates use of multiple python modules
 to achieve this purpose.
 
-Screenshot of this program: https://i.imgur.com/3KLQzsv.png
+[Screenshot of this program:](https://i.imgur.com/3KLQzsv.png)
 
-[portfolio](../../READMEport1.md)
+[Return to Portfolio](../../READMEport1.md)
