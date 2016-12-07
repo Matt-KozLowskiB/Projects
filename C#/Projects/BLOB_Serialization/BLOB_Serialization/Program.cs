@@ -15,7 +15,7 @@ namespace BLOB_Serialization
         static void Main(string[] args)
         {
             //Original 'BLOB' to serialize:
-            string Path = @"GonnaHurl.jpg";
+            string Path = @"halloween.jpg";
             FileStream fs = new FileStream(Path, FileMode.Open, FileAccess.Read);
             BinaryReader br = new BinaryReader(fs);
 

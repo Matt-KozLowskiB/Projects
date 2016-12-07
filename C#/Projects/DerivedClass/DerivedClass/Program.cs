@@ -38,7 +38,7 @@ namespace DerivedClass
             numEngClasses++;
         }
 
-        static int numEngClasses = 0;
+        public static int numEngClasses = 0;
         public static int getnumEngClasses()
         {
             return numEngClasses;
@@ -50,28 +50,42 @@ namespace DerivedClass
         }
 
         // method overloading engDisp:
-        public int engDisp(int boreDiam, int strokeLength)
+        public int engDisp(int boreDiam, int strokeLength, int numOfCylinders)
         {
-            return boreDiam * strokeLength;
+            return boreDiam * strokeLength * numOfCylinders;
         }
-        public double engDisp(double boreDiam, int strokeLength)
+        public double engDisp(double boreDiam, double strokeLength, int numOfCylinders)
         {
-            return boreDiam * strokeLength;
+            return boreDiam * strokeLength * numOfCylinders;
         }
-        class V8 : Engine
-        {
-            public string engGeometry { get; set; }
-            public V8() : base()
-            {
-                engGeometry = "Not Specified";
-            }
-            public V8(int displacement, int numOfCylinders, string fueldelivery, string ignitionType, string engMake, string engGeometry) : base
-            (displacement, numOfCylinders, fueldelivery, ignitionType, engMake)
-            {
-                this.engGeometry = engGeometry;
-            }
-
-        }
-
     }
+    class V8 : Engine
+    {
+        public string engGeometry { get; set; }
+        public V8() : base()
+        {
+            engGeometry = "Not Specified";
+            numEngClasses++;
+        }
+        public V8(int displacement, int numOfCylinders, string fueldelivery, string ignitionType, string engMake, string engGeometry) : base
+        (displacement, numOfCylinders, fueldelivery, ignitionType, engMake)
+        {
+            this.engGeometry = engGeometry;
+            numEngClasses++;
+        }       
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            V8 Cad550 = new V8();
+            Console.WriteLine("Cad550 Displacement(ci) is: ");
+            Console.WriteLine(Cad550.engDisp(9.2, 7.474, 8));
+            Console.WriteLine("Number of Engine Classes is:");
+            Console.WriteLine(Engine.getnumEngClasses());
+            Console.ReadKey();
+        }
+    }
+    
+    
 }
