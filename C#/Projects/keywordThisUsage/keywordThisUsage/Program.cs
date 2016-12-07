@@ -18,11 +18,11 @@ namespace keywordThisUsage
 
         public Engine()
         {
-            this.displacement = 0;
-            this.numOfCylinders = 0;
-            this.fueldelivery = "Not Specified";
-            this.ignitionType = "Not Specified";
-            this.engMake = "Not Specified";
+            displacement = 0;
+            numOfCylinders = 0;
+            fueldelivery = "Not Specified";
+            ignitionType = "Not Specified";
+            engMake = "Not Specified";
 
             numEngClasses++;
 
@@ -36,6 +36,21 @@ namespace keywordThisUsage
             this.engMake = engMake;
 
             numEngClasses++;
+        }
+        public static int numEngClasses = 0;
+        public static int getnumEngClasses()
+        {
+            return numEngClasses;
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Engine Cad550 = new Engine();
+            Console.WriteLine("Number of Engine Classes is:");
+            Console.WriteLine(Engine.getnumEngClasses());
+            Console.ReadKey();
         }
     }
 }
