@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title><h1>JavaScript Calculation: Area of Triangle    </h1></title>
+    <p id="answer"></p>
+    <p id="values"></p>
+</head>
+<body>
+    <script>
+        var a = 5
+        var b = 6
+        var c = 7
+        var s = ((a + b + c) * .5)
+        var area = Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
+        document.getElementById("answer").innerHTML = ("Area of Triangle = " + area);
+        document.getElementById("values").innerHTML = ("Given length of the sides are: " + a + ", " + b + " & " + c)
+
+
+
+
+    </script>
+</body>
+</html>

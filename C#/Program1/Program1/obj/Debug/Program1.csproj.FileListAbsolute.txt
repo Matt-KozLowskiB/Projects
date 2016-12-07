@@ -1,6 +1,0 @@
-C:\Users\Matt\Documents\GitHub\ProjectsI\C#\Program1\Program1\bin\Debug\Program1.exe.config
-C:\Users\Matt\Documents\GitHub\ProjectsI\C#\Program1\Program1\bin\Debug\Program1.exe
-C:\Users\Matt\Documents\GitHub\ProjectsI\C#\Program1\Program1\bin\Debug\Program1.pdb
-C:\Users\Matt\Documents\GitHub\ProjectsI\C#\Program1\Program1\obj\Debug\Program1.csprojResolveAssemblyReference.cache
-C:\Users\Matt\Documents\GitHub\ProjectsI\C#\Program1\Program1\obj\Debug\Program1.exe
-C:\Users\Matt\Documents\GitHub\ProjectsI\C#\Program1\Program1\obj\Debug\Program1.pdb
