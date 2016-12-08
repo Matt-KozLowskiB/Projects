@@ -23,8 +23,8 @@ answer the various 'test questions' the
 students were posed once their database
 was populated.
 
-*Library data files can be seen [here](./Library-Project-Data/)
-*Library Database SQL Queries can be seen [here](./Library-Project-Results/)
+* Library data files can be seen [here](./Library-Project-Data/)
+* Library Database SQL Queries can be seen [here](./Library-Project-Results/)
 
 [Image of Database Table Models](https://i.imgur.com/AoblkML.png)
 
