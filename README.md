@@ -21,10 +21,12 @@ Interested in learning more? Check out my [LinkedIn profile]  (http://linkedin.c
 #### JavaScript
 * [JavaScript Examples](./JavaScript)
 
-
 #### Python
 * [Python Code Samples](./Python/Sample-Code/)
 * [GUI Project](./Python/Mover-GUI-Program/)
+
+#### C#
+* [C# Examples](./C#/Projects/)
 
 #### Team Projects
 * Live-Project coming after C# Course
