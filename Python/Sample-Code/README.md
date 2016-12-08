@@ -1,4 +1,4 @@
-### Python Sammple Code/Projects
+### Python Sample Code/Projects
 ***
 
 Here are a few samples of my early coding in Python.
@@ -23,4 +23,4 @@ results to the screen.
 
 [Screenshot of OfficeStatus Program](https://i.imgur.com/OcHrqY3.png)
 
-[Return to Portfolio Main](../../READMEport1.md)
+[Return to Portfolio Main](/../../)
