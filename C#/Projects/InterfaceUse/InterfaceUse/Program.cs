@@ -10,6 +10,7 @@ namespace InterfaceUse
     {
         double wavelength();
     }
+
     public class Sound : Wave
     {
         public double soundSpeed = 340.29;
@@ -24,15 +25,13 @@ namespace InterfaceUse
         {
             return soundSpeed / frequency;
         }
-
     
 
-    
         static void Main(string[] args)
         {
-            Wave train = new Sound(1500);
+            Sound  train = new Sound(1500);
             Console.WriteLine("wavelength is: " + train.wavelength());
-            Console.Read();
+            Console.ReadKey();
 
         }
     }

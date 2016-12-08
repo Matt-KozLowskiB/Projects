@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
+
+
+
 delegate void MCdelegate(string name);
 
 namespace MultiCastDelegateUse
-
-
-
-
 {
     class Program
     {
@@ -35,7 +35,7 @@ namespace MultiCastDelegateUse
             one("Matt");
             two("Jim");
             three("Ralph");
-            Console.Read();
+            Console.ReadKey();
 
         }
     }
