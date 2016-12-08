@@ -1,0 +1,69 @@
+2	Brandy Manda
+3	David Freeman
+4	Richard Bartle
+5	Jessica Mulliga
+6	Nate Garrelts
+7	Emmanuel Guardiola
+9	Tom Bissell
+10	Tom Chatfield
+11	Dave Morris
+12	Eric Zimmerman
+13	Deborah Todd
+14	Lewis Pulsipher
+15	Bob Bates
+16	Richard Rouse III
+17	Roger E. Pedersen
+19	Brent Fox
+21	McKenzie Wark
+22	Jesper Juul
+23	Laurie Yates
+24	A. E. van Vogt
+25	H. G. Wells
+27	Christopher Stasheff
+28	Eric Frank Russell
+29	Alan Moore
+30	Laurie J. Marks
+31	C. J. Cherryh
+32	M. A. Foster
+33	Clifford D. Simak
+35	A. E. van Vogt
+36	George Alec Effinger
+37	George Alec Effinger
+38	Lin Carter
+39	David Gerrold
+40	Robert Holdstock
+41	Emma Clayton
+42	Ted Dekker
+43	Octavia Butler
+44	J. G. Ballard
+45	Warren Carl Norwood
+46	Paolo Bacigalupi
+47	John Varley
+48	A. E. van Vogt
+49	Frederik Pohl and C. M. Kornbluth
+50	Marge Piercy
+51	Fitz James O'Brien
+52	Damon Knight
+53	Paul Capon
+54	Lloyd Biggle Jr.
+55	A. E. van Vogt
+56	Larry Niven
+57	Larry Niven
+58	Max Brooks
+59	Madeleine L'Engle
+60	Stephen King
+61	Stephen King
+62	Stephen King
+63	Stephen King
+64	Stephen King
+65	Stephen King
+66	Stephen King
+67	Stephen King
+68	Stephen King
+69	Stephen King
+70	Stephen King
+71	Stephen King
+72	Stephen King
+73	Stephen King
+74	Stephen King
+75	Stephen King
