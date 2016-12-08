@@ -18,4 +18,4 @@ with synchronized scrolling.
 
 [Screenshot of this GUI](https://i.imgur.com/3KLQzsv.png)
 
-[Return to Portfolio Main](../../READMEport1.md)
+[Return to Portfolio Main](/../../)
