@@ -14,6 +14,12 @@ project to simulate a real world Library scenario.
 The generated fake data was obtained from a free
 online random generator resource.
 
+Once these table data files were created, they
+were then used to populate their corresponding
+Tables in the Library SQL db using the AutoLoadTables.bat
+batch file.  This batch file utilizes the program
+'BCP' to accomplish this.
+
 
 [Return to Library Project Main](../)
 

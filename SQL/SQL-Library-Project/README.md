@@ -6,7 +6,8 @@ a SQL coding project/challenge students
 of the Tech Academy were presented with
 as part of the curriculum.  It required
 the creation of a database with a number
-of Tables, each used to track different
+of Tables(See 'CreatLib&Tables.sql'),
+each used to track different
 pieces of information.  Examples included
 Tables to track books, User Library Card
 Data, User Personal Data, User history,
@@ -24,4 +25,6 @@ was populated.
 
 [Image of Database Table Models](https://i.imgur.com/AoblkML.png)
 
-[Return to Portfolio Main](../../READMEport1.md)
+[Return to SQL Main](../)
+
+[Return to Portfolio Main](../../)
