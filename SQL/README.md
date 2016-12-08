@@ -16,8 +16,8 @@ populate these with data, and then query
 the database to answer various questions.
 
 
-[Library Project](../SQL-Library-Project/)
+[Library Project](./SQL-Library-Project/)
 
-[SQL Code Samples](../SQL-Code-Samples/)
+[SQL Code Samples](./SQL-Code-Samples/)
 
-[Return to Portfolio Main](../)
+[Return to Portfolio Main](/../../)
