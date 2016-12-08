@@ -25,8 +25,8 @@ Interested in learning more? Check out my [LinkedIn profile]  (http://linkedin.c
 * [Python Code Samples](./Python/Sample-Code/)
 * [GUI Project](./Python/Mover-GUI-Program/)
 
-#### C#
-* [C# Examples](./C#/Projects/)
+#### C(#)
+* [C# Examples](./C%23/Projects/)
 
 #### Team Projects
 * Live-Project coming after C# Course
