@@ -11,7 +11,7 @@ namespace ConApp2
         static void Main(string[] args)
         {
             Console.WriteLine("Enter your name, please:");
-            String Name = Console.ReadLine();
+            string Name = Console.ReadLine();
             Console.WriteLine("Hello," + Name);
             Console.WriteLine("Press Return to terminate....");
             Console.Read();
