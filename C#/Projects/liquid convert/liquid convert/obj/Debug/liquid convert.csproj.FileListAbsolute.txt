@@ -1,0 +1,20 @@
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\csc.exe
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\System.Collections.Immutable.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\vbc.exe
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\VBCSCompiler.exe
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\roslyn\VBCSCompiler.exe.config
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\liquid convert.dll.config
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\liquid convert.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\liquid convert.pdb
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\obj\Debug\liquid convert.csprojResolveAssemblyReference.cache
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\obj\Debug\liquid convert.dll
+c:\users\matt\documents\visual studio 2015\Projects\liquid convert\liquid convert\obj\Debug\liquid convert.pdb
