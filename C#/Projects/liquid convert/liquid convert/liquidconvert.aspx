@@ -9,10 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <p>Liters:  <input data-bind="value: lit" /> = Gallons:
-        <b data-bind="text: gal1" ></b></p>
-        <p>Gallons:  <input data-bind="value: gal" />   
-         = Liters:  <b data-bind="text: lit1"></b> </p>        
+        <p>Liters:  <input data-bind="value: lit" /> =
+        <b data-bind="text: gal1" ></b> Gallon(s)</p>
+        <p>Gallons:  <input data-bind="value: gal" /> =  
+        <b data-bind="text: lit1"></b> Liter(s) </p>        
     </div>
     </form>
     <script src="scripts/knockout-3.4.0.js"></script>
